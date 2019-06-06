@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body style="background-color: lightblue">
+	<div class="container">
+	<h2>Form</h2>
+	<form method="post" enctype="multipart/form-data" onsubmit="return func()" name="MyForm">
+	<div class="form-group">
+	First Name<br> 
+	<input style="padding: 0.375rem 0.75rem" type="text" name="First name" value="" placeholder="First name"><br>
+	Last Name<br> 
+	<input style="padding: 0.375rem 0.75rem" type="text" name="Last name" value="" placeholder="Last name"><br>	
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+ 	Address<br>
+ 	<input style="padding: 0.375rem 0.75rem" type="text" name="Address" value="" placeholder="Address"><br> 
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+   <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button>on submit</button> 
+  </form>
+  Upload<br><input type="file" name="file" value="file" accept=".png,.jpg">
+</div>
+<script>
+	function func() {
+		 var file_type;
+		  file_type = document.forms["MyForm"]["file"].value;
+		 if (first_name == "Akash") {
+		 	alert("Welcome Hommie");
+		 }
+		 else {
+		 	alert("Who You");
+		 }
+	}
+</script>
+</body>
+</html>
